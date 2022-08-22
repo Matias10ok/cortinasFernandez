@@ -13,7 +13,7 @@
     "footer";
     grid-template-columns: 100%;
     grid-template-rows: 200px 700px 100px;
-    background-image: linear-gradient(to left, rgb(141, 180, 202)  #f1eded);
+    background-image: linear-gradient( 109.6deg,  rgb(141, 180, 202) 11.2%, rgb(182, 184, 185) 91.1% );
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: relative;
     height: 100%;
@@ -22,7 +22,7 @@
 
 header{
     grid-area: header;
-    background-color: #f1eded;
+    background-image: linear-gradient( 109.6deg,  rgb(141, 180, 202) 11.2%, rgb(182, 184, 185) 91.1% );
     display: flex;
     justify-content: space-between;
     height: 150px;
@@ -39,7 +39,7 @@ header{
 
 /* menu */
 .menuContainer{
-    background-color:  #f1eded;
+    background-image: linear-gradient( 109.6deg,  rgb(141, 180, 202) 11.2%, rgb(182, 184, 185) 91.1% );
     font-family: Roboto-Regular;
     width: 100%;
     height: 40px;
@@ -53,6 +53,8 @@ header{
 .menuContainer a {
     color: #000;
     text-decoration: none;
+    font-size: 20px;
+    transition: color 1.5s ease-in-out, font-size 1.5s;
 }
 
 .menuContainer a:hover {
@@ -79,6 +81,14 @@ header{
 section{
     grid-area: section;
     width: 100%;
+}
+
+img{
+    transition: 0.5s;
+    object-fit: cover;
+}
+img:hover{
+    transform: scale(1.1);
 }
 
 .mainImgContainer{
