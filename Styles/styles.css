@@ -106,6 +106,17 @@ img:hover{
     border: 2px solid #000000 ;
 }
 
+/* Contenido */
+
+.fondo-titulo{
+    background-color: rgb(12, 113, 207);
+}
+
+.fondo-pres{
+    background-color: #f1eded;
+}
+
+/* Footer */
 .mainFooter{
     grid-area: footer;
     display: flex;
