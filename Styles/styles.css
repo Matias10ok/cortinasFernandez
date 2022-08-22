@@ -13,7 +13,7 @@
     "footer";
     grid-template-columns: 100%;
     grid-template-rows: 200px 700px 100px;
-    background-color: rgb(141, 180, 202);
+    background-image: linear-gradient( 109.6deg,  rgb(141, 180, 202) 11.2%, rgb(182, 184, 185) 91.1% );
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: relative;
     height: 100%;
@@ -81,6 +81,14 @@ header{
 section{
     grid-area: section;
     width: 100%;
+}
+
+img{
+    transition: 0.5s;
+    object-fit: cover;
+}
+img:hover{
+    transform: scale(1.1);
 }
 
 .mainImgContainer{
