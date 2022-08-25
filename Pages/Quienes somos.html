@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="/Styles/styles.css">
-    <link rel="stylesheet" href="/Styles/reset.css">
     <title>Quienes somos? - Desarrollo web</title>
 </head>
 <body class="body">
@@ -14,30 +14,35 @@
             Cortinas Fernandez
         </h1>
 
-        <div class="menuContainer">
-            <nav class="mainMenu">
-                <!-- Lista no ordenanda -->
-                <ul class="ulMenu">
-                    <li class="liMenu">
-                        <a href="../index.html">Inicio</a>
-                    </li>
-                    <li class="liMenu">
-                        <a href="../Pages/Quienes somos.html">Quienes somos?</a>
-                    </li>
-                    <li class="liMenu">
-                        <a href="../Pages/Servicios.html">Servicios</a>
-                    </li>
-                    <li class="liMenu">
-                        <a href="../Pages/Productos.html">Productos</a>
-                    </li>
-                    <li class="liMenu">
-                        <a href="../Pages/Galería.html">Galería</a>
-                    </li>
-                    <li class="liMenu">
-                        <a href="../Pages/Contacto.html">Contacto</a>
-                    </li>  
-                </ul>    
-            </nav>
+        <nav class="navbar navbar-expand-lg body">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                      </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../Pages/Quienes somos.html">Quienes somos?</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../Pages/Servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../Pages/Productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../Pages/Galería.html">Galería</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../Pages/Contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         </div>
     </header>
     
@@ -54,32 +59,44 @@
             Colocación de cortinas de enrollar en Ciudad de Buenos Aires
         </h1>
     </div>
+
+    <main class="container">
+        <div class="row">
+            <h2 class="col-6 fondo-titulo p-2 m-2 text-center">Quienes somos?</h2>
+            <p class="col-6 fondo-pres p-2 m-2 text-center">Somos Cortinas Fernandez, una empresa familiar dedicada desde hace más de 70 años a la fabricación y colocación de cortinas de enrollar domiciliarias, además, reparamos y motorizamos las mismas.
+
+                Somos profesionales líderes en el rubro. Nos caracteriza la seriedad, compromiso, confiabilidad, eficacia y rapidez en cada uno de nuestros trabajos.
+                
+                Trabajamos toda la gama de cortinas de enrollar (madera, aluminio y PVC), americanas y venecianas de aluminio. Solicítenos asesoramiento personalizado y atención a domicilio sin cargo, con gusto lo atenderemos.</p>
+        </div>
+    </main>
+    
     </section>
         
+       <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
    
-                <footer  class="mainFooter">
-           
-                    <div class="footerUl">
-                        <ul>
-                            <li>
-                                <a href="../Pages/Aviso legal.html">Aviso legal</a>
-                            </li>
-                            <li>
-                                <a href="../Pages/Politica de privacidad.html">Politica de privacidad</a>
-                            </li>
-                            <li>
-                                <a href="../Pages/Mapa web.html">Mapa web</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <strong>Seguinos en:</strong>
-        
-                        <div class="footerImg">
-                            <img src="../assets/img/icons8-instagram.svg" alt="logo Instagram" width="40px">
-                            <img src="../assets/img/icons8-facebook-240.svg" alt="logo Facebook" width="40px">
-                        </div>
-                    </div>
-                </footer>
+    <footer  class="mainFooter">
+         <div class="footerUl">
+            <ul>
+                <li>
+                    <a href="../Pages/Aviso legal.html">Aviso legal</a>
+                </li>
+                <li>
+                    <a href="../Pages/Politica de privacidad.html">Politica de privacidad</a>
+                </li>
+                <li>
+                    <a href="../Pages/Mapa web.html">Mapa web</a>
+                </li>
+            </ul>
+        </div>
+         <div>
+            <strong>Seguinos en:</strong>
+                 <div class="footerImg">
+                      <img src="../assets/img/icons8-instagram.svg" alt="logo Instagram" width="40px">
+                      <img src="../assets/img/icons8-facebook-240.svg" alt="logo Facebook" width="40px">
+               </div>
+            </div>
+        </footer>
 </body>
 </html>
