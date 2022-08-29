@@ -1,4 +1,4 @@
-/* diseño desktop */
+
 *{
     padding: 0;
     margin: 0;
@@ -40,7 +40,6 @@ header{
 
 /* menu */
 .menuContainer{
-    background-image: linear-gradient( 109.6deg,  rgb(141, 180, 202) 11.2%, rgb(182, 184, 185) 91.1% );
     font-family: Roboto-Regular;
     width: 100%;
     height: 40px;
@@ -51,16 +50,17 @@ header{
     font-size: 20px;
 }
 
-.menuContainer a {
-    color: #000;
-    text-decoration: none;
-    font-size: 20px;
-    transition: color 1.5s ease-in-out, font-size 1.5s;
-}
-
-.menuContainer a:hover {
-    color: rgb(0, 0, 255);
-    text-decoration: none;
+.menuContainer{
+                a{
+                    color: #000;
+                    text-decoration: none;
+                    font-size: 20px;
+                    transition: color 1.5s ease-in-out, font-size 1.5s;
+                    &:hover {
+                        color: rgb(0, 0, 255);
+                        text-decoration: none;
+                    }
+                }
 }
 
 .mainMenu {
@@ -74,9 +74,12 @@ header{
     margin-right: 20px;
 }
 
-.ulMenu .liMenu {
-    display: inline-block;
-    margin-left: 10px;
+.ulMenu {
+        li.menu{
+            display: inline-block;
+            margin-left: 10px;
+        }
+    
 }
 
 section{
@@ -130,29 +133,38 @@ img:hover{
     padding: 0;
 }
 
-.mainFooter ul{
-    list-style-type: none;
+.mainFooter {
+            ul{
+                list-style-type: none;
+            }
+    
 }
 
 .footerUl{
 float: left;
 }
 
-.footerUl ul li{
-    display: inline-block;
-    margin: 5px;
-}
-
-.mainFooter  li a{
-    color: #000;
-    text-decoration: none;
+.footerUl {
+            li{
+                display: inline-block;
+                margin: 5px;
+            }
     
 }
 
-.mainFooter li a:hover{
-    color: rgb(0, 0, 255);
+.mainFooter {
+            li{
+                a{
+                    color: #000;
+                    text-decoration: none;
+                    &:hover{
+                            color: rgb(0, 0, 255);
+                    }
+                }
+            }
+    
+    
 }
-
 
 .avisoTitulo{
     color: rgb(12, 113, 207);
@@ -193,26 +205,38 @@ float: left;
     padding: 0px;
 }
 
-.mapaContainer .ulMapa li{
-    background-color: rgb(141, 180, 202);
-    border: 02px solid rgb(0, 0, 59);
-    border-radius: 05px;
-    padding: 05px;
+.mapaContainer {
+                .ulMapa{
+                        li{
+                            background-color: rgb(141, 180, 202);
+                            border: 02px solid rgb(0, 0, 59);
+                            border-radius: 05px;
+                            padding: 05px;
+                        }
+                }
+    
 }
 
-.mapaContainer .ulMapa li a{
-    color: rgb(0, 0, 59);
-    text-decoration: none;
-}
-
-.mapaContainer .ulMapa li a:hover{
-    color:   rgb(12, 113, 207);
-    text-decoration: none;
+.mapaContainer {
+                .ulMapa{
+                        li{
+                            a{
+                                color: rgb(0, 0, 59);
+                                text-decoration: none;
+                                &:hover{
+                                        color:   rgb(12, 113, 207);
+                                        text-decoration: none;
+                                }
+                            }
+                        }
+                }
+    
 }
 
 /* fin diseño desktop */
 
-diseño para celular */
+/* diseño para celular */
+
 @media screen and (max-width: 576px) {
     .body{
         grid-template-areas: 
@@ -232,4 +256,4 @@ diseño para celular */
     
 }
 
-/* fin diseño celular
+/* fin de diseño para celular */
