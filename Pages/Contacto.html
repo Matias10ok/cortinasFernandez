@@ -14,27 +14,28 @@
             Cortinas Fernandez
         </h1>
 
-        <nav class="navbar navbar-expand-lg body">
+        <nav class="navbar navbar-expand-lg fondo">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+              <a class="nav-link" href="../index.html">Inicio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../Pages/Quienes somos.html">Quienes somos?</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Que hacemos?
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../Pages/Productos.html">Productos</a></li>
+                      <li><a class="dropdown-item" href="../Pages/Servicios.html">Servicios</a></li>
+                    </ul>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                      </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../Pages/Quienes somos.html">Quienes somos?</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../Pages/Servicios.html">Servicios</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../Pages/Productos.html">Productos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../Pages/Galería.html">Galería</a>
+                        <a class="nav-link" href="../Pages/Galería.html">Galería</a>
+                    </li>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="../Pages/Contacto.html">Contacto</a>
@@ -43,10 +44,9 @@
               </div>
             </div>
           </nav>
-        </div>
     </header>
 
-    <section class="section">
+ <section class="section">
     <div class="mainImgContainer">
         <img src="https://irp-cdn.multiscreensite.com/8ee6e80f/DESKTOP/jpg/311255-americana-cortinas-cortina-barrio.jpg" alt="imagen de cortina de barrio" width="170px" height="250px" />
         <img src="https://irp-cdn.multiscreensite.com/8ee6e80f/DESKTOP/jpg/311281-americana-cortinas-cortina-de-pvc-1.jpg" alt="imagen de cortina de pvc" width="310px" height="250px" />
@@ -59,51 +59,52 @@
             Cortinas venecianas en Ciudad de Buenos Aires
         </h1>
     </div>
-<main class="container">
-    <div class="row">
-        <h1 class="col-6 fondo-titulo p-2 m-2 text-center">Formulario de contacto</h1>
+    <main class="container">
+        <div class="row">
+            <h1 class="col-6 fondo-titulo p-2 m-2 text-center">Formulario de contacto</h1>
     
-   <div class="col-6 fondo-pres p-2 m-2 text-center" >
-    <h6>Por favor, envienos sus comentarios</h6>
-    <!-- Formulario -->
-    <form>
-        <fieldset>
-            <legend>Datos personales</legend>
-            <label for="Nombre">Nombre</label>
-            <br />
-            <input id="Nombre" type="text" placeholder="Ingresa tu nombre">
-            <br />
-            <label for="Empresa">Empresa</label>
-            <br />
-            <input  id="Empresa" type="text" placeholder="Ingresa tu empresa">
-            <br />
-            <label for="Tel">Teléfono</label>
-            <br />
-            <input id="Tel" type="tel" placeholder="Ingresa tu telefono">
-            <br />
-            <label for="Correo electronico">Correo electronico</label>
-            <br />
-            <input id="Correo electronico" type="text" placeholder="Ingresa tu correo electronico">
-            </fieldset>
-        <label for="Comentarios">Comentarios</label>
-        <br />
-        <textarea id="Comentarios" placeholder="Comentarios"></textarea>
-        <br />
-        <label for="tyc">Acepto los términos y condiciones</label>
-        <input type="checkbox">
-        <br />
-        <label for="opciones">Desea recibir notificaciones</label>
-        <input name="opcion" type="radio">
-        <span>Si</span>
-        <input name="opcion" type="radio">
-        <span>No</span>
-        <br />
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpiar formulario" >
-    </form>
-    </div>
-    </div>
-</main>
+            <div class="col-6 fondo-pres p-2 m-2 text-center" >
+            
+                <h6>Por favor, envienos sus comentarios</h6>
+                <!-- Formulario -->
+                <form>
+                    <fieldset>
+                        <legend>Datos personales</legend>
+                            <label for="Nombre">Nombre</label>
+                            <br />
+                            <input id="Nombre" type="text" placeholder="Ingresa tu nombre">
+                            <br />
+                            <label for="Empresa">Empresa</label>
+                            <br />
+                            <input  id="Empresa" type="text" placeholder="Ingresa tu empresa">
+                            <br />
+                            <label for="Tel">Teléfono</label>
+                            <br />
+                            <input id="Tel" type="tel" placeholder="Ingresa tu telefono">
+                            <br />
+                            <label for="Correo electronico">Correo electronico</label>
+                            <br />
+                            <input id="Correo electronico" type="text" placeholder="Ingresa tu correo electronico">
+                    </fieldset>
+                    <label for="Comentarios">Comentarios</label>
+                    <br />
+                    <textarea id="Comentarios" placeholder="Comentarios"></textarea>
+                    <br />
+                    <label for="tyc">Acepto los términos y condiciones</label>
+                    <input type="checkbox">
+                    <br />
+                    <label for="opciones">Desea recibir notificaciones</label>
+                    <input name="opcion" type="radio">
+                    <span>Si</span>
+                    <input name="opcion" type="radio">
+                    <span>No</span>
+                    <br />
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpiar formulario" >
+                </form>
+            </div>
+        </div>
+    </main>
 </section>
 
    <!-- JavaScript Bundle with Popper -->

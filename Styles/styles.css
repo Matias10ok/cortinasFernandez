@@ -31,6 +31,7 @@ header{
 .header__titulo{
     text-align: left;
     color: #000;
+    padding: 20px;
 }
 
 .separador{
@@ -211,7 +212,7 @@ float: left;
 
 /* fin diseño desktop */
 
-/* diseño para celular */
+diseño para celular */
 @media screen and (max-width: 576px) {
     .body{
         grid-template-areas: 
@@ -231,4 +232,4 @@ float: left;
     
 }
 
-/* fin diseño celular */
+/* fin diseño celular
