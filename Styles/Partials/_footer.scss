@@ -4,7 +4,7 @@
     justify-content: space-around;
     padding-top: 20px;
     padding-bottom:  20px;
-    background-color: #f1eded;
+    background-color: $footerMainColor;
     bottom: 0%;
     width: 100%;
     padding: 0;
@@ -32,7 +32,7 @@ float: left;
 .mainFooter {
             li{
                 a{
-                    color: #000;
+                    color: $headerTituloColor;
                     text-decoration: none;
                     &:hover{
                             color: rgb(0, 0, 255);
@@ -42,3 +42,14 @@ float: left;
     
     
 }
+
+@media screen and (min-width: 768px) {
+    footer{
+        background-color: $mapaContainerColor;
+    }
+    
+}
+
+
+
+

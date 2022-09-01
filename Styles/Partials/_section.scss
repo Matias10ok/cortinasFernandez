@@ -16,6 +16,7 @@ img:hover{
     text-align: center;
     margin:0;
     padding: 0;
+    margin-top: 10px;
 }
 
 .mainImgContainer img{
@@ -23,23 +24,23 @@ img:hover{
     border-left: 5px solid #000000 ;
     border-top: 5px solid #000000;
     border-bottom: 5px solid #000000; */
-    border: 2px solid #000000 ;
+    border: $sectionBorder;
 }
 
 /* Contenido */
 
 .fondo-titulo{
-    background-color: rgb(12, 113, 207);
+    background-color: $sectionMainColor;
 }
 
 .fondo-pres{
-    background-color: #f1eded;
+    background-color: $footerMainColor;
 }
 
 
 
 .avisoTitulo{
-    color: rgb(12, 113, 207);
+    color: $sectionMainColor;
     text-align: center;
 }
 
@@ -55,20 +56,20 @@ img:hover{
 }
 
 .tituloPri{
-    color: rgb(12, 113, 207);
+    color: $sectionMainColor;
     text-align: center;
 }
 
 .politicaPriv{
-    color: #000;
+    color: $borderSectionColor;
     text-align: center;
 }
 
 .mapaContainer{
-    background-color: rgb(12, 113, 207);
-    border-bottom: 03px solid rgb(0, 0, 59);
+    background-color: $sectionMainColor;
+    border-bottom: $mapaBorder;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: $borderRadiusMapa;
     width: 50%;
 }
 
@@ -80,9 +81,9 @@ img:hover{
 .mapaContainer {
                 .ulMapa{
                         li{
-                            background-color: rgb(141, 180, 202);
-                            border: 02px solid rgb(0, 0, 59);
-                            border-radius: 05px;
+                            background-color: $mapaContainerColor;
+                            border: $borderMapaContainer;
+                            border-radius: $borderRadiusMapaContainer;
                             padding: 05px;
                         }
                 }
@@ -93,14 +94,21 @@ img:hover{
                 .ulMapa{
                         li{
                             a{
-                                color: rgb(0, 0, 59);
+                                color: $borderMapaColor;
                                 text-decoration: none;
                                 &:hover{
-                                        color:   rgb(12, 113, 207);
+                                        color: $sectionMainColor;
                                         text-decoration: none;
                                 }
                             }
                         }
                 }
+    
+}
+
+@media screen and (min-width: 768px) {
+    section{
+        background-color: $mapaContainerColor;
+    }
     
 }
