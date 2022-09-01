@@ -1,0 +1,55 @@
+.mainFooter{
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom:  20px;
+    background-color: $footerMainColor;
+    bottom: 0%;
+    width: 100%;
+    padding: 0;
+}
+
+.mainFooter {
+            ul{
+                list-style-type: none;
+            }
+    
+}
+
+.footerUl{
+float: left;
+}
+
+.footerUl {
+            li{
+                display: inline-block;
+                margin: 5px;
+            }
+    
+}
+
+.mainFooter {
+            li{
+                a{
+                    color: $headerTituloColor;
+                    text-decoration: none;
+                    &:hover{
+                            color: rgb(0, 0, 255);
+                    }
+                }
+            }
+    
+    
+}
+
+@media screen and (min-width: 768px) {
+    footer{
+        background-color: $mapaContainerColor;
+    }
+    
+}
+
+
+
+
