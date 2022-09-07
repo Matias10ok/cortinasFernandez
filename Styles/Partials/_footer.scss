@@ -1,7 +1,7 @@
 .mainFooter{
     grid-area: footer;
     display: flex;
-    justify-content: space-around;
+    justify-content: $footerJustify;
     padding-top: 20px;
     padding-bottom:  20px;
     background-color: $footerMainColor;
@@ -35,7 +35,7 @@ float: left;
                     color: $headerTituloColor;
                     text-decoration: none;
                     &:hover{
-                            color: rgb(0, 0, 255);
+                            color: map-get($links, linksHeaderColorHover);
                     }
                 }
             }

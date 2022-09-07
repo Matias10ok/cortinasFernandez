@@ -1,0 +1,14 @@
+@mixin flex($direction: row, $justify, $align, $height, $width) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    height: $height;
+    width: $width;
+}
+
+.div{
+    @include flex($justify: space-evenly, $align: center, $height: 200px, $width: 100%);
+    border: 02px solid;
+    padding: 10px;
+}
