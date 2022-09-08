@@ -7,8 +7,8 @@
     width: $width;
 }
 
-.div{
-    @include flex($justify: space-evenly, $align: center, $height: 200px, $width: 100%);
+.div {
+    @include flex($justify: space-evenly, $align: center, $height: auto, $width: 100%);
     border: 02px solid;
     padding: 10px;
 }
