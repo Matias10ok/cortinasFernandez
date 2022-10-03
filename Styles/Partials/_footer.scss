@@ -1,13 +1,11 @@
 .mainFooter{
     grid-area: footer;
     display: flex;
-    justify-content: space-around;
+    justify-content: $footerJustify;
     padding-top: 20px;
     padding-bottom:  20px;
     background-color: $footerMainColor;
-    bottom: 0%;
     width: 100%;
-    padding: 0;
 }
 
 .mainFooter {
@@ -35,7 +33,7 @@ float: left;
                     color: $headerTituloColor;
                     text-decoration: none;
                     &:hover{
-                            color: rgb(0, 0, 255);
+                            color: map-get($links, linksHeaderColorHover);
                     }
                 }
             }
@@ -49,6 +47,27 @@ float: left;
     }
     
 }
+
+/* version mobile */
+@media screen and (max-width: 576px) {
+    .body{
+        grid-template-areas: 
+        "header"
+        "section"
+        "section"
+        "section"
+        "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 700px 200px;
+        background-color: rgb(141, 180, 202);
+        font-family: $primaryFont;
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+    
+}
+/* fin version mobile */
 
 
 

@@ -1,0 +1,44 @@
+$borderSectionColor: #000000;
+$sectionBorder: 2px solid $borderSectionColor;
+$borderMapaColor:  rgb(0, 0, 59);
+$mapaBorder: 03px solid $borderMapaColor;
+$borderRadiusMapa: 10px;
+$borderMapaContainer: 02px solid $borderMapaColor;
+$borderRadiusMapaContainer: 05px;
+$headerTituloColor:  #000;
+$footerMainColor: #f1eded;
+$sectionMainColor:  rgb(12, 113, 207);
+$mapaContainerColor:  rgb(141, 180, 202);
+$primaryFont: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$headerNavFont: Roboto-Regular;
+$headerJustify: space-between;
+$navJustify: right;
+$footerJustify: space-around;
+$headerHeight: 150px;
+$paddingHeaderTitulo: 20px;
+
+$estilosHeader: (
+    headerTituloColor:  #000,
+    headerJustify: space-between,
+    headerHeight: 150px,
+    paddingHeaderTitulo: 20px,
+);
+
+$borders: (
+    sectionBorder: 2px solid $borderSectionColor,
+    mapaBorder: 03px solid $borderMapaColor,
+    borderRadiusMapa: 10px,
+    borderMapaContainer: 02px solid $borderMapaColor,
+    borderRadiusMapaContainer: 05px,
+);
+
+$estilosNav: (
+    navJustify: right,
+    headerNavFont: Roboto-Regular,
+    navWidth: 100%,
+    navHeight: 40px,
+);
+
+$links: (
+    linksHeaderColorHover:  rgb(0, 0, 255),
+)

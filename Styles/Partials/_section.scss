@@ -20,12 +20,9 @@ img:hover{
 }
 
 .mainImgContainer img{
-    /* border-right: 5px solid #000000 ;
-    border-left: 5px solid #000000 ;
-    border-top: 5px solid #000000;
-    border-bottom: 5px solid #000000; */
     border: $sectionBorder;
 }
+
 
 /* Contenido */
 
@@ -112,3 +109,24 @@ img:hover{
     }
     
 }
+
+/* version mobile */
+@media screen and (max-width: 576px) {
+    .body{
+        grid-template-areas: 
+        "header"
+        "section"
+        "section"
+        "section"
+        "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 700px 200px;
+        background-color: rgb(141, 180, 202);
+        font-family: $primaryFont;
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+    
+}
+/* fin version mobile */

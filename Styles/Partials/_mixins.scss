@@ -1,0 +1,8 @@
+@mixin tituloPri($color, $align) {
+    color: $color;
+    text-align: $align;
+}
+
+.tituloPri {
+    @include tituloPri($color: rgb(12, 113, 207), $align: center);
+}
